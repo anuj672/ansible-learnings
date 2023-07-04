@@ -1,0 +1,14 @@
+---
+  - name: playbook to interact between two text files
+    hosts: localhost
+
+    tasks:
+    
+      - name: "test reach"
+        ping:
+
+      - name: "display contents using find module"
+        find:
+          path: ~/Desktop/ansible
+          file_type: file
+
